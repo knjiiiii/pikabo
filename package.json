@@ -9,6 +9,8 @@
     "cheerio": "^1.0.0-rc.2",
     "cheerio-httpcli": "^0.7.3",
     "coffee-script": "^1.12.6",
+    "gulp": "^3.9.1",
+    "gulp-coffeelint": "^0.6.0",
     "hubot": "^3.0.1",
     "hubot-diagnostics": "0.0.2",
     "hubot-google-images": "^0.2.7",
