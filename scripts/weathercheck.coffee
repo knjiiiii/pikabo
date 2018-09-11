@@ -13,8 +13,10 @@ module.exports = (robot) ->
         result = json['YDF']['Feature'][0]['Property']['WeatherList']['Weather']
         msg.send "今降ってる降水量は#{result['Rainfall']}です" if result['Type'] = observation
       else
-        console.log "response error: #{response.statusCode}"
-        console.log body
+        res = []
+        res.push "response error: #{response.statusCode}"
+        res.push "\n"+body
+        msg.send res 
 
 ###
 module.exports = (robot) ->
