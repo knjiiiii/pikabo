@@ -8,7 +8,7 @@ This README is intended to help get you started. Definitely update and improve
 to talk about your own instance, how to use and deploy, what functionality is
 available, etc!
 
-#[heroku]: http://www.heroku.com
+[heroku]: http://www.heroku.com
 [hubot]: http://hubot.github.com
 [generator-hubot]: https://github.com/github/generator-hubot
 
