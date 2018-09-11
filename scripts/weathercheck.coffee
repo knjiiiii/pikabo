@@ -3,9 +3,6 @@
 #
 # Commands:
 #   hubot (天気|weather) 地名
-#
-# Author:
-#   @shokai
 
 {forecast} = require "weather-yahoo-jp"
 
@@ -14,7 +11,7 @@ module.exports = (robot) ->
   robot.respond /(天気|weather) (.+)/i, (msg) ->
     where = msg.match[2]
     forecast
-      .get where
+      .get(where)
       .then (weather) ->
         res = []
         res.push "#{weather.where}"
