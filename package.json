@@ -19,6 +19,7 @@
     "hubot-slack": "^4.5.4",
     "hubot-slack-rainfall-alert": "^1.0.9",
     "moment": "^2.22.2",
+    "request": "^2.88.0",
     "weather-yahoo-jp": "^0.5.1"
   },
   "engines": {
