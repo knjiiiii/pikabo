@@ -1,5 +1,5 @@
 module.exports = (robot) ->
-  robot.hear /(天気|weather) (.*)/, (msg) ->
+  robot.hear /(雨|rain) (.*)/, (msg) ->
 
     # 降水量取得
     rainfunc = (geo) ->
