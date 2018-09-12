@@ -13,12 +13,12 @@ module.exports = (robot) ->
       # 降水量の取得
       request = require 'request'
       request
-        url: "https://map.yahooapis.jp/weather/V1/place?appid=#{process.env.YAHOO_APPID}&coordinates=#{location['lat']},#{location['lng']}&output=json"
+        url: "https://map.yahooapis.jp/weather/V1/place?appid=#{process.env.YAHOO_APPID}&coordinates=#{location['lng']},#{location['lat']}&output=json"
       , (err, response, body) ->
         if response.statusCode is 200
           json = JSON.parse body
           result = json['Feature'][0]['Property']['WeatherList']['Weather']
-          msg.send "現在の#{msg.match[2]}(#{location['lat']},#{location['lng']})の降水量は#{result['Rainfall']}です。そのうち自発的に伝えるつもり。" if result['Type'] = "observation"
+          msg.send "現在の#{msg.match[2]}の降水量は#{result[0]['Rainfall']}です。そのうち自発的に伝えるつもり。"
         else
           res = []
           res.push "response error: #{response.statusCode}"
