@@ -1,3 +1,10 @@
+# Description:
+#   bot helps to enjoy slack life
+#
+# Dependencies:
+#   $ npm install
+#
+
 module.exports = (robot) ->
   robot.hear /(雨|rain) (.*)/, (msg) ->
 

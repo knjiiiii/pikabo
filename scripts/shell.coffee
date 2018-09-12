@@ -1,3 +1,6 @@
+# Description:
+#   bot helps to enjoy slack life
+
 module.exports = (robot) ->
   robot.respond /shell (.*)/i, (msg) ->
     COMMAND = msg.match[1]
