@@ -38,6 +38,7 @@ module.exports = (robot) ->
           if rainresult[0].Rainfall > 0
             robot.send {room: "#sandbox"}, "今、日比谷は雨降ってるっぽい？降水量が#{rainresult[0]['Rainfall']}mm/hですって。"
           else
-            robot.send {room: "#sandbox"}, "今、日比谷は雨降って無さそう"
-        else
-          robot.send {room: "#sandbox"}, "#{response.statusCode}っぽい察して"
+            return
+#            robot.send {room: "#sandbox"}, "今、日比谷は雨降って無さそう"
+#        else
+#          robot.send {room: "#sandbox"}, "#{response.statusCode}っぽい察して"
