@@ -13,7 +13,7 @@ module.exports = (robot) ->
   # 毎分rainfallCheckを実行
   new cronJob(
     # Crontabの設定方法と基本一緒 *(sec) *(min) *(hour) *(day) *(month) *(day of the week)
-    cronTime: "0 */30 * * * 1-5" # 実行時間
+    cronTime: "0 */30 6-21 * * 1-5" # 実行時間
     start:    true              # すぐにcronのjobを実行するか
     timeZone: "Asia/Tokyo"      # タイムゾーン指定
     onTick: ->                  # 時間が来た時に実行する処理
