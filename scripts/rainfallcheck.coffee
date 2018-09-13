@@ -21,7 +21,7 @@ module.exports = (robot) ->
           if response.statusCode is 200
             json = JSON.parse body
             rainresult = json['Feature'][0]['Property']['WeatherList']['Weather']
-            msg.send "現在の#{msg.match[2]}の降水量は#{rainresult[0]['Rainfall']}です。そのうち自発的に伝えるつもり。"
+            msg.send "現在の#{msg.match[2]}の降水量は#{rainresult[0]['Rainfall']}ですって"
           else
             msg.send "#{response.statusCode}っぽい察して"
 
